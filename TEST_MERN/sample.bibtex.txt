@@ -1,0 +1,9 @@
+@article{example,
+  title = {Example Article},
+  author = {John Doe},
+  year = {2023},
+  type = {journal-article},
+  topic = {Topic1, Topic2, Topic3},
+  url = {https://example.com/article},
+  doi = {10.1234/example-doi}
+}

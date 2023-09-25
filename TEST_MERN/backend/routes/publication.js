@@ -17,17 +17,9 @@ sgMail.setApiKey('SG.9zrR6io6TnmPGDOYaWN_cg.mkQl-MrMHSm_w7dKDkeq1mXsCLBeTfiMWvG1
 
 
 // POST Method for creating publications
-router.post("/", async ({ body }, res, next) => {
-  try {
-    const post = new Publication(body);
-    const savedPost = await post.save();
-    res.status(201).json({
-      status: 201,
-      data: savedPost,
-    });
-  } catch (err) {
-    next(err);
-  }
+router.get("/", (req, res) => {
+  // 返回HTML响应
+  res.send("<h1>publication</h1>");
 });
 
 // POST Method for upload bibtex file

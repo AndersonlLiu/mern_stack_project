@@ -1,0 +1,228 @@
+.header h1{
+  font-family: 'Brandon Grotesque', sans-serif;
+  color: #0E0362;
+  cursor: pointer;
+}
+
+.header h1:hover{
+  color: #BD051E;
+}
+
+.subtitle-usc {
+  font-family: 'Brandon Grotesque Bold', sans-serif;
+  color: #BD051E;
+}
+
+.publication h2 {
+  font-family: 'neue-haas-grotesk-display';
+  color: #0292C0;
+}
+
+.publication p{
+  font-style: italic;
+}
+
+.subtitle-container {
+  font-family: 'Brandon Grotesque', sans-serif;
+  color: #0E0362;
+}
+
+.navLink a {
+  font-family: "Brandon Grotesque Bold";
+  color: #0E0362;
+  text-decoration: none;
+  padding-bottom: 3px;
+}
+
+/* Style for hovered link */
+.navLink a:hover {
+  color: #BD051E;
+  border-bottom: 2px solid #BD051E;
+}
+
+/* Style for the active link (current route) */
+.navLink a.active {
+  color: #BD051E;
+  border-bottom: 2px solid #BD051E;
+}
+
+.contain {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.subtitle-usc{
+  padding-left: 5rem;
+  font-size: large;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  
+}
+
+.navLink {
+  display: flex;
+  gap: 1rem;
+}
+
+.main-content {
+  width: 100%;
+  margin: 0 auto;  /* Center the main content */
+}
+
+.filter-sidebar {
+  flex-basis: 20%;  /* This sets the base width of the sidebar to 30% of its parent container */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  
+}
+
+.filter-sidebar label {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.publications {
+  flex-basis: 70%;  /* This sets the base width of the publications list to 70% of its parent container */
+  padding: 1rem;
+  overflow-y: auto;  /* To allow scrolling if the content exceeds the container height */
+}
+
+.publication-item {
+  padding: 1rem;
+  margin-top: 10px;
+  
+}
+
+.subtitle-container {
+  padding-top: 2rem;
+  border-bottom: 1px solid grey;
+}
+
+.subtitle-container h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em; /* Adjust as needed */
+}
+
+.filter_search{
+  margin-top: 3rem;
+  
+}
+
+.filter_search p{
+  margin: 0%;
+}
+
+.mobile-nav-icon {
+  display: none; /* hidden by default */
+  width: 50px;
+  height: 50px;
+  color: #000;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.mobile-nav-menu {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.mobile-nav-menu a {
+  font-size: 50px; /* Adjust the font size as needed */
+  color: black; /* Black color for the links */
+  font-weight: bold; /* Bold text */
+  text-decoration: none; /* Remove underline */
+  transition: text-decoration 0.3s; /* Smooth transition for underline */
+}
+
+.mobile-nav-menu a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.close_route{
+  display: block;
+  rotate: 45deg;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  color: #000;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* CSS for the filter-pop-up-container */
+.filter-pop-up-container {
+  background-color: #fff; /* Set the background color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow for the pop-up effect */
+  padding: 20px; /* Add padding to the content inside the container */
+  position: fixed; /* Fix the position to the viewport */
+  left: 0;
+  bottom: 0;
+  width: 75%; /* Adjust the width as needed */
+  z-index: 999; /* Ensure the pop-up is on top of other content */
+  overflow-y: auto; /* Allow scrolling if content exceeds the container height */
+  max-height: 80vh; 
+}
+
+.close-button-div{
+  display: flex;
+  justify-content: center;
+}
+
+.close-button{
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) { 
+  .mobile-nav-icon {
+    display: block;
+  }
+
+  .navLink {
+    display: none;
+  }
+
+  .header h1 {
+    font-size: 18px;
+  }
+
+  .subtitle-container h1 {
+    font-size: 16px;
+  }
+
+  .subtitle-usc {
+    display: none;
+  }
+}
+
+
+
+

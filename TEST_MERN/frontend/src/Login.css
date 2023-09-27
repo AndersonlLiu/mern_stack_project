@@ -1,0 +1,15 @@
+.login-form {
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  
+  .login-form .form-control {
+    width: 500px;  
+  }
+
+  @media (max-width: 768px) {
+    .login-form .form-control {
+        width: 300px;  
+      }
+  }
+  

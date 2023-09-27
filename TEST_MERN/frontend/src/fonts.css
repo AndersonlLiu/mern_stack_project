@@ -1,0 +1,31 @@
+/* fonts.css */
+/* Regular style */
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('./fonts/Brandon_reg.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Italic style */
+  @font-face {
+    font-family: 'Brandon Grotesque Italic';
+    src: url('./fonts/Brandon_reg_it.otf') format('opentype');
+    font-weight: normal; /* You can adjust the weight */
+    font-style: italic;
+  }
+  
+  /* Bold style */
+  @font-face {
+    font-family: 'Brandon Grotesque Bold';
+    src: url('./fonts/Brandon_bld.otf') format('opentype');
+    font-weight: normal; /* Adjust the weight for bold style */
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'neue-haas-grotesk-display'; 
+    src: url('./fonts/NeueHaasDisplayLight.ttf') format('truetype');
+    font-weight: normal; /* Adjust the weight for bold style */
+    font-style: normal;
+  }

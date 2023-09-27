@@ -1,0 +1,21 @@
+.Register{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.Register .form-control {
+    width: 500px; 
+}
+.message {
+    color: blue;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .Register .form-control {
+        width: 300px;  
+      }
+}
